@@ -3,11 +3,11 @@
 </template>
 
 <script>
-	export default {
-		name: "Html",
-		mounted() {},
-	}
-	
+export default {
+  name: 'Html',
+  mounted () {}
+}
+
 </script>
 
 <style scoped>

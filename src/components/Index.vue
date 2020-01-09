@@ -23,15 +23,15 @@
 </template>
 
 <script>
-	import Editor from '@/components/Editor.vue'
-	import Html from '@/components/Html.vue'
-	export default {
-		name: "Index",
-		components: {
-			Editor,
-			Html
-		}
-	}
+import Editor from '@/components/Editor.vue'
+import Html from '@/components/Html.vue'
+export default {
+  name: 'Index',
+  components: {
+    Editor,
+    Html
+  }
+}
 </script>
 
 <style scoped>
