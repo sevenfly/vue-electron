@@ -1,18 +1,18 @@
 <template>
     <div class="home">
         <img src="../assets/logo.png">
-        <HelloWorld></HelloWorld>
+        <Index></Index>
     </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Index from '@/components/Index.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Index
   }
 }
 </script>
