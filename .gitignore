@@ -2,7 +2,8 @@
 node_modules
 /dist
 /build/dist
-
+.project
+yarn.lock
 # local env files
 .env.local
 .env.*.local
