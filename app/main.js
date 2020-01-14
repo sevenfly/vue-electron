@@ -18,7 +18,8 @@ function createWindow () {
     titleBarStyle: 'hidden',
     webPreferences: {
       webSecurity: false,
-      nodeIntegration: true
+      nodeIntegration: true,
+	  webviewTag:true
     }
     // frame: false
     // transparent: true
@@ -58,7 +59,7 @@ function createWindow () {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', createWindow)
-
+app.commandLine.appendSwitch('remote-debugging-port', 14600)
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
   // On OS X it is common for applications and their menu bar
