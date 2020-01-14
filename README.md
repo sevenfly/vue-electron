@@ -1,18 +1,6 @@
 # vue-electron-template
-
-## 版本
-
-> vue: 2.6.10  
-> electron : 7.1.2
+## 安装
+npm install
 
 ## 运行
-
-```shell
 yarn dev
-```
-
-## 打包
-
-```shell
-yarn bd
-```
