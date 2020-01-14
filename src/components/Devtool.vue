@@ -7,7 +7,11 @@
 	export default {
 		name: 'Devtool',
 		mounted() {
-			setTimeout(() => {
+			let webviewHtml = document.querySelector("#webviewHtml");
+			webviewHtml.addEventListener("did-start-loading", this.loadstart);
+		},
+		methods:{
+			loadstart:function(){
 				axios.get('http://localhost:14600/json/list').then(({data}) => {
 					let _url = '';
 					data.forEach((item,index) => {
@@ -19,7 +23,7 @@
 					_url = _url.split("?ws=")[1];
 					document.querySelector("#devtool").setAttribute("src",'http://localhost:14600/devtools/devtools_app.html?ws='+_url);
 				})
-			},25)
+			}
 		}
 	}
 </script>
