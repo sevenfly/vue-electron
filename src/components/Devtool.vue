@@ -16,7 +16,7 @@
 					let _url = '';
 					data.forEach((item,index) => {
 						if(item.url.indexOf("baidu.com") != -1){
-							_url = item.devtoolsFrontendUrl
+							_url = item.devtoolsFrontendUrl;
 						}
 					})
 					

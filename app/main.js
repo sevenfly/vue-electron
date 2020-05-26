@@ -19,7 +19,7 @@ function createWindow () {
     webPreferences: {
       webSecurity: false,
       nodeIntegration: true,
-	  webviewTag:true
+      webviewTag: true
     }
     // frame: false
     // transparent: true
